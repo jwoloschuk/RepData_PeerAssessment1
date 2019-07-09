@@ -84,7 +84,8 @@ steps_per_day <- aggregate(steps ~ date, activity_data, sum)
 ```{r hist}
 
 # Plot a histogram with 20 breaks (bins of 1,000 steps)
-hist(steps_per_day$steps, main = "Histogram of the Total Number of Steps per Day", xlab = "Number of Steps (20 bins)", col = "cyan", breaks = 20)
+hist(steps_per_day$steps, main = "Histogram of the Total Number of Steps per Day",
+     xlab = "Number of Steps (20 bins)", col = "cyan", breaks = 20)
 
 ```
 

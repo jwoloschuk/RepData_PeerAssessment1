@@ -25,26 +25,7 @@ This assignment contains a number of steps, shown below:
 ```r
 # Load necessary packages
 library(dplyr)
-```
 
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 # Set working directory, save the zip file URL, and the zip file name
 setwd("~/GitHub/RepData_PeerAssessment1")
 zip_url <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
@@ -104,7 +85,8 @@ steps_per_day <- aggregate(steps ~ date, activity_data, sum)
 
 ```r
 # Plot a histogram with 20 breaks (bins of 1,000 steps)
-hist(steps_per_day$steps, main = "Histogram of the Total Number of Steps per Day", xlab = "Number of Steps (20 bins)", col = "cyan", breaks = 20)
+hist(steps_per_day$steps, main = "Histogram of the Total Number of Steps per Day",
+     xlab = "Number of Steps (20 bins)", col = "cyan", breaks = 20)
 ```
 
 ![](PA1_template_files/figure-html/hist-1.png)<!-- -->
