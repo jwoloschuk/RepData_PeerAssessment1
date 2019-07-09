@@ -25,7 +25,26 @@ This assignment contains a number of steps, shown below:
 ```r
 # Load necessary packages
 library(dplyr)
+```
 
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
 # Set working directory, save the zip file URL, and the zip file name
 setwd("~/GitHub/RepData_PeerAssessment1")
 zip_url <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"

@@ -392,9 +392,16 @@ $(document).ready(function () {
 <div id="loading-the-data" class="section level3">
 <h3>1) Loading the data</h3>
 <pre class="r"><code># Load necessary packages
-library(dplyr)
-
-# Set working directory, save the zip file URL, and the zip file name
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code># Set working directory, save the zip file URL, and the zip file name
 setwd(&quot;~/GitHub/RepData_PeerAssessment1&quot;)
 zip_url &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;
 zip_file &lt;- &quot;repdata_data_activity.zip&quot;
